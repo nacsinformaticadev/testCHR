@@ -1,0 +1,25 @@
+
+{% extends 'core/core.html' %}
+{% block content %}
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Título</th>
+                <th>Fecha</th>
+                <th>Fuente</th>
+                <th>Contenido</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for jurisprudencia in datos_jurisprudencia %}
+            <tr>
+                <td>{{ jurisprudencia.titulo }}</td>
+                <td>{{ jurisprudencia.fecha }}</td>
+                <td>{{ jurisprudencia.fuente }}</td>
+                <td>{{ jurisprudencia.contenido }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock content %}

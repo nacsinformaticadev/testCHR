@@ -1,0 +1,39 @@
+
+{% extends 'core/core.html' %}
+{% block content %}
+<h1>Información Marítima</h1>
+
+<h1>Concesiones Marítimas</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Número</th>
+            <th>Enlace</th>
+            <th>Tipo</th>
+            <th>Gobernación Marítima</th>
+            <th>Lugar</th>
+            <th>DS</th>
+            <th>Trámite</th>
+            <th>Concesionario</th>
+            <th>Vigencia</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for concesion in concesiones %}
+        <tr>
+            <td>{{ concesion.numero }}</td>
+            <td><a href="{{ concesion.enlace }}">{{ concesion.enlace }}</a></td>
+            <td>{{ concesion.tipo }}</td>
+            <td>{{ concesion.gobernacion_maritima }}</td>
+            <td>{{ concesion.lugar }}</td>
+            <td>{{ concesion.ds }}</td>
+            <td>{{ concesion.tramite }}</td>
+            <td>{{ concesion.concesionario }}</td>
+            <td>{{ concesion.vigencia }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+
+{% endblock content %}

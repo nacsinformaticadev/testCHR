@@ -1,0 +1,14 @@
+{
+    "debug": true,
+    "base_url": "http://127.0.0.1:8000/",
+    "user": "root",
+    "password": "Tarkov#87",
+    "server": "localhost",
+    "bd": "clinicaSantoDomingo",
+    "puerto": 3306,
+    "smtp": "s627.gru5.mysecurecloudhost.com",
+    "smtp_puerto": 587,
+    "email": "pruebas@datatips.cl",
+    "email_password": "Pruebas123",
+    "secret_key":"+&mclf7+$%4+hvswjriquy2+j@)zi+2^^0ho+&8i)tum=m6fww"
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es"> 
+
+<head>
+    <!-- Meta -->
+    {% include 'core/complements/meta/meta.html' %}
+
+    <!-- Favicon -->
+    {% include 'core/complements/favicon/favicon.html' %}
+
+    <!-- Google Web Fonts -->
+    {% include 'core/complements/googleFonts/googleFonts.html' %}
+
+
+    <!-- Icon Font Stylesheet -->
+    {% include 'core/complements/iconFonts/iconFonts.html' %}
+
+
+    <!-- Bootstrap Stylesheet --><!-- Template Stylesheet --><!-- Libraries Stylesheet -->
+    {% include 'core/complements/css/css.html' %}
+        
+</head>
+
+<body>
+  
+
+   
+
+
+   
+ 
+
+    {% comment %} inicio Contenido {% endcomment %}
+    {% block content %}
+    
+    {% endblock content %}
+    {% comment %} fin contenido  {% endcomment %}
+
+ 
+
+
+    <!-- Template Javascript --><!-- JavaScript Libraries -->
+    {% include 'core/complements/js/js.html' %}
+
+
+
+  
+
+
+</body>
+</html>

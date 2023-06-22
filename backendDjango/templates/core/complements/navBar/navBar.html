@@ -1,0 +1,30 @@
+{% load static %}
+<div class="container-fluid bg-primario sticky-top wow fadeInDown" data-wow-delay="0.2s">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light p-0">
+            <a href="{% url 'index' %}" class="navbar-brand">
+                <img src=" {% static 'assets/img/logo/logo_laviajera_blanco.png' %} " class="img-fluid w-75" alt="">
+            </a>
+            <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
+                <span class="fs-1 text-white"><i class="bi bi-list"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto">
+                    <a href="#inicio" class="nav-item nav-link">Inicio</a>
+                    <a href="#historia" class="nav-item nav-link">Historia</a>
+                    <a href="#espumas" class="nav-item nav-link">Stock de Espumas</a>
+                    <a href="#materiales" class="nav-item nav-link">Materiales de Tapicería</a>
+                    <a href="#huincacara" class="nav-item nav-link">Servicio de Tapicería</a>
+                    <a href="#galeria" class="nav-item nav-link">Galería</a>
+                    <a href="#contacto" class="nav-item nav-link">Contacto</a>
+                    <a href="https://api.whatsapp.com/send?phone=56998269276&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n."
+                    class="btn bg-cuatro py-2 px-4 bg-gradient nav-item nav-link d-block d-md-none text-dark m-3" target="_blank">Llama o escríbenos al <br> +56 9 9826 9276</a>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=56998269276&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n."
+                    class="btn bg-cuatro py-2 px-4 d-none d-lg-inline-block bg-gradient" target="_blank">¡Cotiza
+                    Ahora!</a>
+            </div>
+        </nav>
+    </div>
+</div>
